@@ -1,0 +1,45 @@
+<!-- -*- mode: XML -*- -->
+ 
+<!--
+Xtionは平面 + 0.69[m]（0.99[m] - 0.3[m]）の高さで，オブジェクトから0.9または1.1[m]離した所，チルト30[rad]に設置
+-->
+
+<launch>
+    <arg name="aoi_y_min" default="0.6"/> <!-- オブジェクトからの距離 - 0.3 -->
+    <arg name="aoi_y_max" default="1.1"/> <!-- オブジェクトからの距離 + 0.2 -->
+    <arg name="aoi_z_min" default="0.13"/> <!-- 平面の高さ - 0.2 -->
+    <arg name="aoi_z_max" default="0.63"/> <!-- 平面の高さ + 0.3 -->
+    <arg name="plane_height" default="0.33"/> <!-- 平面の高さ -->
+    <arg name="xtion_height" default="1.02"/> <!-- 平面の高さ + 0.69 -->
+
+
+    <include file="$(find hsr_common_pkg)/launch/openni2.launch"/>
+
+
+    <param name="/param/obj_proc/mode_0" type="str" value="pre"/>
+    <param name="/param/obj_proc/mode_1" type="str" value="low"/>
+    <param name="/param/obj_proc/mode_2" type="str" value="none"/>
+    <param name="/param/obj_proc/mode_3" type="str" value="none"/>
+    <param name="/param/obj_proc/aoi/base_link_x/min" type="double" value="-0.2"/>
+    <param name="/param/obj_proc/aoi/base_link_x/max" type="double" value="0.2"/>
+    <param name="/param/obj_proc/aoi/base_link_y/min" type="double" value="$(arg aoi_y_min)"/>
+    <param name="/param/obj_proc/aoi/base_link_y/max" type="double" value="$(arg aoi_y_max)"/>
+    <param name="/param/obj_proc/aoi/base_link_z/min" type="double" value="$(arg aoi_z_min)"/>
+    <param name="/param/obj_proc/aoi/base_link_z/max" type="double" value="$(arg aoi_z_max)"/>
+    <param name="/param/obj_proc/plane/height" type="double" value="$(arg plane_height)"/>
+	<node pkg="hsr_common_pkg" type="obj_proc" name="obj_proc" output="screen">
+        <remap from="/hsrb/head_rgbd_sensor/rgb/image_raw" to="/camera/rgb/image_raw"/>
+        <remap from="/hsrb/head_rgbd_sensor/depth_registered/points" to="/camera/depth_registered/points"/>
+    </node>
+
+
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint2camera_link" output="screen"
+        args="0 0 $(arg xtion_height) 1.57 0.52 0 base_footprint camera_link 33"  
+    />
+    <node pkg="tf" type="static_transform_publisher" name="camera_rgb_optical_frame2head_rgbd_sensor_rgb_frame" output="screen"
+        args="0 0 0 0 0 0 camera_rgb_optical_frame head_rgbd_sensor_rgb_frame 33"  
+    />
+
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hsr_common_pkg)/rviz_cfg/obj.rviz"/>
+</launch>

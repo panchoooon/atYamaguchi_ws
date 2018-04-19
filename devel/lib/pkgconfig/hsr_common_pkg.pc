@@ -1,0 +1,8 @@
+prefix=/home/guest/athome_ws/devel
+
+Name: hsr_common_pkg
+Description: Description of hsr_common_pkg
+Version: 0.0.0
+Cflags: -I/home/guest/athome_ws/devel/include
+Libs: -L/home/guest/athome_ws/devel/lib 
+Requires: 

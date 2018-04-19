@@ -1,0 +1,8 @@
+prefix=/home/guest/athome_ws/install
+
+Name: hsr_common_pkg
+Description: Description of hsr_common_pkg
+Version: 0.0.0
+Cflags: -I/home/guest/athome_ws/install/include
+Libs: -L/home/guest/athome_ws/install/lib 
+Requires: 

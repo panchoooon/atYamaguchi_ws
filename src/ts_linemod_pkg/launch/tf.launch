@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint2camera" output="screen"
+        args="0 0 1 0 0.523 0 base_footprint camera_link 33"  
+    />
+</launch>

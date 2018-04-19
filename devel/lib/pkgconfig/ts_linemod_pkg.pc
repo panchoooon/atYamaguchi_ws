@@ -1,0 +1,8 @@
+prefix=/home/guest/athome_ws/devel
+
+Name: ts_linemod_pkg
+Description: Description of ts_linemod_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/guest/athome_ws/devel/lib 
+Requires: 

@@ -1,0 +1,2 @@
+hsr_common_pkg:ts_linemod_pkg
+-DCATKIN_DEVEL_PREFIX=/home/guest/athome_ws/devel -DCMAKE_INSTALL_PREFIX=/home/guest/athome_ws/install -G Unix Makefiles

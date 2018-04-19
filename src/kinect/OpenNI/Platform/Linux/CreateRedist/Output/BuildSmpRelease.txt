@@ -1,0 +1,157 @@
+make: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/Build' に入ります
+make -C ../SimpleRead.net
+make -C ../SimpleViewer.net
+make -C ../UserTracker.net
+make -C ../NiSimpleRead
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.net' に入ります
+gmcs -out:../Bin/x64-Release/SimpleRead.net.exe -target:winexe -o+ -r:OpenNI.net.dll -lib:../Bin/x64-Release ./*.cs ../Res/AssemblyInfo-OpenNI.cs
+make -C ../NiUserSelection
+make -C ../NiHandTracker
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.net' に入ります
+gmcs -out:../Bin/x64-Release/SimpleViewer.net.exe -target:winexe -unsafe -o+ -r:OpenNI.net.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll -lib:../Bin/x64-Release ./*.cs ../Res/AssemblyInfo-OpenNI.cs
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.net' に入ります
+gmcs -out:../Bin/x64-Release/UserTracker.net.exe -target:winexe -unsafe -o+ -r:OpenNI.net.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll -lib:../Bin/x64-Release ./*.cs ../Res/AssemblyInfo-OpenNI.cs
+make -C ../NiAudioSample
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleRead' に入ります
+mkdir -p x64-Release
+make -C ../SimpleRead.java
+g++ -MD -MP -MT "./x64-Release/NiSimpleRead.d x64-Release/NiSimpleRead.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiSimpleRead.o NiSimpleRead.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserSelection' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/ClosestUserSelector.d x64-Release/ClosestUserSelector.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/ClosestUserSelector.o ClosestUserSelector.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiAudioSample' に入ります
+mkdir -p x64-Release
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.java' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiAudioSample.d x64-Release/NiAudioSample.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiAudioSample.o NiAudioSample.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiHandTracker' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiHandTracker.d x64-Release/NiHandTracker.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/NiHandTracker.o NiHandTracker.cpp
+javac -cp ../Bin/x64-Release/org.openni.jar:/usr/share/java/org.openni.jar -d x64-Release ./org/openni/Samples/SimpleRead/*.java
+g++ -o ../Bin/x64-Release/Sample-NiSimpleRead ./x64-Release/NiSimpleRead.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+g++ -o ../Bin/x64-Release/Sample-NiAudioSample ./x64-Release/NiAudioSample.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleRead' から出ます
+make -C ../NiUserTracker
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserTracker' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/DefaultTrackingInitializer.d x64-Release/DefaultTrackingInitializer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/DefaultTrackingInitializer.o DefaultTrackingInitializer.cpp
+g++ -MD -MP -MT "./x64-Release/SceneDrawer.d x64-Release/SceneDrawer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/SceneDrawer.o SceneDrawer.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiAudioSample' から出ます
+make -C ../SimpleViewer.java
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.java' に入ります
+mkdir -p x64-Release
+javac -cp ../Bin/x64-Release/org.openni.jar:/usr/share/java/org.openni.jar -d x64-Release ./org/openni/Samples/SimpleViewer/*.java
+g++ -MD -MP -MT "./x64-Release/NiHandViewer.d x64-Release/NiHandViewer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/NiHandViewer.o NiHandViewer.cpp
+Compilation succeeded - 1 warning(s)
+Compilation succeeded - 1 warning(s)
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.net' から出ます
+make -C ../NiSkeletonBenchmark
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.net' から出ます
+make -C ../NiBackRecorder
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSkeletonBenchmark' に入ります
+mkdir -p x64-Release
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiBackRecorder' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiSkeletonBenchmark.d x64-Release/NiSkeletonBenchmark.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiSkeletonBenchmark.o NiSkeletonBenchmark.cpp
+g++ -MD -MP -MT "./x64-Release/main.d x64-Release/main.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/main.o main.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.net' から出ます
+make -C ../UserTracker.java
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.java' に入ります
+mkdir -p x64-Release
+javac -cp ../Bin/x64-Release/org.openni.jar:/usr/share/java/org.openni.jar -d x64-Release ./org/openni/Samples/UserTracker/*.java
+g++ -MD -MP -MT "./x64-Release/ExitPoseDetector.d x64-Release/ExitPoseDetector.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/ExitPoseDetector.o ExitPoseDetector.cpp
+g++ -MD -MP -MT "./x64-Release/NiSimpleViewer.d x64-Release/NiSimpleViewer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/NiSimpleViewer.o NiSimpleViewer.cpp
+( echo "Main-Class: org.openni.Samples.SimpleRead.SimpleRead"; echo "Class-Path:  ../Bin/x64-Release/org.openni.jar /usr/share/java/org.openni.jar"; ) > Manifest.txt
+jar -cfm ../Bin/x64-Release/org.openni.Samples.SimpleRead.jar Manifest.txt -C x64-Release .
+g++ -MD -MP -MT "./x64-Release/main.d x64-Release/main.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/main.o main.cpp
+echo java -jar org.openni.Samples.SimpleRead.jar > ../Bin/x64-Release/org.openni.Samples.SimpleRead; chmod +x ../Bin/x64-Release/org.openni.Samples.SimpleRead
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleRead.java' から出ます
+make -C ../NiConvertXToONI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiConvertXToONI' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiConvertXToONI.d x64-Release/NiConvertXToONI.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiConvertXToONI.o NiConvertXToONI.cpp
+g++ -MD -MP -MT "./x64-Release/PoseToggleUserSelector.d x64-Release/PoseToggleUserSelector.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/PoseToggleUserSelector.o PoseToggleUserSelector.cpp
+g++ -o ../Bin/x64-Release/NiSkeletonBenchmark ./x64-Release/NiSkeletonBenchmark.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSkeletonBenchmark' から出ます
+make -C ../NiRecordSynthetic
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiRecordSynthetic' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiRecordSynthetic.d x64-Release/NiRecordSynthetic.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiRecordSynthetic.o NiRecordSynthetic.cpp
+g++ -MD -MP -MT "./x64-Release/main.d x64-Release/main.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/main.o main.cpp
+g++ -o ../Bin/x64-Release/Sample-NiBackRecorder ./x64-Release/main.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+( echo "Main-Class: org.openni.Samples.SimpleViewer.SimpleViewerApplication"; echo "Class-Path:  ../Bin/x64-Release/org.openni.jar /usr/share/java/org.openni.jar"; ) > Manifest.txt
+jar -cfm ../Bin/x64-Release/org.openni.Samples.SimpleViewer.jar Manifest.txt -C x64-Release .
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiBackRecorder' から出ます
+make -C ../NiSampleModule
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSampleModule' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/ExportedSampleDepth.d x64-Release/ExportedSampleDepth.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -fPIC -fvisibility=hidden -o x64-Release/ExportedSampleDepth.o ExportedSampleDepth.cpp
+g++ -o ../Bin/x64-Release/Sample-NiHandTracker ./x64-Release/NiHandTracker.o ./x64-Release/NiHandViewer.o ./x64-Release/NiSimpleViewer.o ./x64-Release/main.o -L../../Lib -L../Bin/x64-Release -lglut -lGL -lOpenNI
+g++ -MD -MP -MT "./x64-Release/PoseUserSelector.d x64-Release/PoseUserSelector.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/PoseUserSelector.o PoseUserSelector.cpp
+g++ -o ../Bin/x64-Release/Sample-NiConvertXToONI ./x64-Release/NiConvertXToONI.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+echo java -jar org.openni.Samples.SimpleViewer.jar > ../Bin/x64-Release/org.openni.Samples.SimpleViewer; chmod +x ../Bin/x64-Release/org.openni.Samples.SimpleViewer
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/SimpleViewer.java' から出ます
+make -C ../NiSimpleViewer
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleViewer' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiSimpleViewer.d x64-Release/NiSimpleViewer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiSimpleViewer.o NiSimpleViewer.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiHandTracker' から出ます
+make -C ../NiViewer
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiViewer' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/Audio.d x64-Release/Audio.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Audio.o Audio.cpp
+g++ -MD -MP -MT "./x64-Release/opengles.d x64-Release/opengles.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/opengles.o opengles.cpp
+g++ -o ../Bin/x64-Release/Sample-NiRecordSynthetic ./x64-Release/NiRecordSynthetic.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiConvertXToONI' から出ます
+make -C ../NiSimpleSkeleton
+g++ -o ../Bin/x64-Release/Sample-NiUserTracker ./x64-Release/SceneDrawer.o ./x64-Release/main.o ./x64-Release/opengles.o -L../../Lib -L../Bin/x64-Release -lglut -lGL -lOpenNI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleSkeleton' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiSimpleSkeleton.d x64-Release/NiSimpleSkeleton.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiSimpleSkeleton.o NiSimpleSkeleton.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiRecordSynthetic' から出ます
+make -C ../NiCRead
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiCRead' に入ります
+mkdir -p x64-Release
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserTracker' から出ます
+make -C ../NiSimpleCreate
+g++ -MD -MP -MT "./x64-Release/NiCRead.d x64-Release/NiCRead.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiCRead.o NiCRead.c
+g++ -MD -MP -MT "./x64-Release/Capture.d x64-Release/Capture.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Capture.o Capture.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleCreate' に入ります
+mkdir -p x64-Release
+g++ -MD -MP -MT "./x64-Release/NiSimpleCreate.d x64-Release/NiSimpleCreate.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/NiSimpleCreate.o NiSimpleCreate.cpp
+g++ -MD -MP -MT "./x64-Release/Registration.d x64-Release/Registration.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -fPIC -fvisibility=hidden -o x64-Release/Registration.o Registration.cpp
+g++ -o ../Bin/x64-Release/Sample-NiCRead ./x64-Release/NiCRead.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+( echo "Main-Class: org.openni.Samples.UserTracker.UserTrackerApplication"; echo "Class-Path:  ../Bin/x64-Release/org.openni.jar /usr/share/java/org.openni.jar"; ) > Manifest.txt
+jar -cfm ../Bin/x64-Release/org.openni.Samples.UserTracker.jar Manifest.txt -C x64-Release .
+g++ -MD -MP -MT "./x64-Release/SampleManager.d x64-Release/SampleManager.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/SampleManager.o SampleManager.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiCRead' から出ます
+g++ -MD -MP -MT "./x64-Release/SceneDrawer.d x64-Release/SceneDrawer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/SceneDrawer.o SceneDrawer.cpp
+g++ -o ../Bin/x64-Release/Sample-NiSimpleViewer ./x64-Release/NiSimpleViewer.o -L../../Lib -L../Bin/x64-Release -lglut -lGL -lOpenNI
+g++ -o ../Bin/x64-Release/Sample-NiSimpleCreate ./x64-Release/NiSimpleCreate.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+echo java -jar org.openni.Samples.UserTracker.jar > ../Bin/x64-Release/org.openni.Samples.UserTracker; chmod +x ../Bin/x64-Release/org.openni.Samples.UserTracker
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/UserTracker.java' から出ます
+g++ -MD -MP -MT "./x64-Release/SinglePoseUserSelector.d x64-Release/SinglePoseUserSelector.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/SinglePoseUserSelector.o SinglePoseUserSelector.cpp
+g++ -MD -MP -MT "./x64-Release/Device.d x64-Release/Device.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Device.o Device.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleCreate' から出ます
+g++ -MD -MP -MT "./x64-Release/Draw.d x64-Release/Draw.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Draw.o Draw.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleViewer' から出ます
+g++ -MD -MP -MT "./x64-Release/Keyboard.d x64-Release/Keyboard.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Keyboard.o Keyboard.cpp
+g++ -o ../Bin/x64-Release/Sample-NiSimpleSkeleton ./x64-Release/NiSimpleSkeleton.o -L../../Lib -L../Bin/x64-Release -lOpenNI
+g++ -MD -MP -MT "./x64-Release/Menu.d x64-Release/Menu.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Menu.o Menu.cpp
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSimpleSkeleton' から出ます
+g++ -MD -MP -MT "./x64-Release/MouseInput.d x64-Release/MouseInput.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/MouseInput.o MouseInput.cpp
+g++ -MD -MP -MT "./x64-Release/NiViewer.d x64-Release/NiViewer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/NiViewer.o NiViewer.cpp
+g++ -MD -MP -MT "./x64-Release/TrackingInitializer.d x64-Release/TrackingInitializer.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/TrackingInitializer.o TrackingInitializer.cpp
+g++ -MD -MP -MT "./x64-Release/UserSelector.d x64-Release/UserSelector.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/UserSelector.o UserSelector.cpp
+g++ -MD -MP -MT "./x64-Release/Statistics.d x64-Release/Statistics.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni -I./  -o x64-Release/Statistics.o Statistics.cpp
+g++ -MD -MP -MT "./x64-Release/UserTracker.d x64-Release/UserTracker.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/UserTracker.o UserTracker.cpp
+g++ -MD -MP -MT "./x64-Release/main.d x64-Release/main.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/main.o main.cpp
+g++ -MD -MP -MT "./x64-Release/opengles.d x64-Release/opengles.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -o x64-Release/opengles.o opengles.cpp
+g++ -MD -MP -MT "./x64-Release/SampleDepth.d x64-Release/SampleDepth.o" -c -msse3 -O2 -DNDEBUG -I../../Include -I/usr/include/ni  -fPIC -fvisibility=hidden -o x64-Release/SampleDepth.o SampleDepth.cpp
+g++ -o ../Bin/x64-Release/Sample-NiUserSelection ./x64-Release/ClosestUserSelector.o ./x64-Release/DefaultTrackingInitializer.o ./x64-Release/ExitPoseDetector.o ./x64-Release/PoseToggleUserSelector.o ./x64-Release/PoseUserSelector.o ./x64-Release/SampleManager.o ./x64-Release/SceneDrawer.o ./x64-Release/SinglePoseUserSelector.o ./x64-Release/TrackingInitializer.o ./x64-Release/UserSelector.o ./x64-Release/UserTracker.o ./x64-Release/main.o ./x64-Release/opengles.o -L../../Lib -L../Bin/x64-Release -lglut -lGL -lOpenNI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiUserSelection' から出ます
+g++ -o ../Bin/x64-Release/NiViewer ./x64-Release/Audio.o ./x64-Release/Capture.o ./x64-Release/Device.o ./x64-Release/Draw.o ./x64-Release/Keyboard.o ./x64-Release/Menu.o ./x64-Release/MouseInput.o ./x64-Release/NiViewer.o ./x64-Release/Statistics.o -L../../Lib -L../Bin/x64-Release -lglut -lGL -lOpenNI
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiViewer' から出ます
+g++ -o ../Bin/x64-Release/libSample-NiSampleModule.so ./x64-Release/ExportedSampleDepth.o ./x64-Release/Registration.o ./x64-Release/SampleDepth.o -L../../Lib -L../Bin/x64-Release -lOpenNI -Wl,--no-undefined -shared
+make[1]: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/NiSampleModule' から出ます
+make: ディレクトリ `/home/guest/athome_ws/src/kinect/OpenNI/Platform/Linux/Redist/OpenNI-Bin-Dev-Linux-x64-v1.5.8.5/Samples/Build' から出ます
